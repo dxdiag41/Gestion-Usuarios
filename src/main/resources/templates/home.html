@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+<div class="home-container">
+    <h2>Bienvenido a la Página de Inicio</h2>
+    <a th:href="@{/usuarios/gestion}" class="button-container">Gestión de Usuarios</a>
+    <br>
+    <a th:href="@{/usuarios/tablero}" class="button-container">Tablero de Usuarios</a>
+    <form th:action="@{/logout}" method="post" class="logout-form">
+        <button type="submit">Cerrar Sesión</button>
+    </form>
+</div>
+</body>
+</html>
